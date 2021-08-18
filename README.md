@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/claytoncastro/api-rest/maven)
+
 # Sistema para Controle de Clientes e Pets
 
 ### Ambiente
