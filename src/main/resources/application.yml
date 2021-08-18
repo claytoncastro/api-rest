@@ -1,0 +1,22 @@
+server:
+  port: 8081
+  error:
+    include-stacktrace: on-param
+
+spring:
+  application:
+    name: petshop
+
+  #BD MySQL CONFIGURATION
+  datasource:
+    url: jdbc:mysql://localhost:3306/petshop?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  #JPA CONFIGURATION
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
