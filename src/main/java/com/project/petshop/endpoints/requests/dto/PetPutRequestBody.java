@@ -16,16 +16,16 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ClientePutRequestBody {
+public class PetPutRequestBody {
 
-    @Schema(description = "Esse é o id do cliente" , example = "5")
     private Long id;
-    @Schema(description = "Esse é o nome do cliente" , example = "João")
+    @Schema(description = "Esse é o nome do pet" , example = "Astor")
     @NotBlank(message = "O campo 'nome' é obrigatório")
     private String nome;
-    @Schema(description = "Esse é o sobrenome do cliente" , example = "Pereira")
-    private String sobrenome;
-    @Schema(description = "Esse a data de cadastro do cliente e deve ser no formato 'yyyy-MM-dd'" ,
+    @Schema(description = "Essa é a raça do pet" , example = "Schnauzer")
+    @NotBlank(message = "O campo 'raca' é obrigatório")
+    private String raca;
+    @Schema(description = "Esse a data de cadastro do pet e deve ser no formato 'yyyy-MM-dd'" ,
             example = "2021-08-18")
     @NotNull(message = "O campo 'dataCadastro' é obrigatório")
     private LocalDate dataCadastro;
